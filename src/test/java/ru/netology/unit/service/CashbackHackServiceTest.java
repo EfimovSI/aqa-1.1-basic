@@ -18,12 +18,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void shouldReturn1000WhenAmountIs3000() {
-        assertEquals(service.remain(3000), 1000);
-    }
-
-    @Test
-    public void shouldReturn1000WhenAmountIs0() {
-        assertEquals(service.remain(0), 1000);
+    public void shouldReturn0WhenAmountIs3000() {
+        assertEquals(service.remain(3000), 0);
     }
 }
